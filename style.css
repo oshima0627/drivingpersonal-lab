@@ -945,6 +945,7 @@ ul {
 
 .comparison__table {
   width: 100%;
+  min-width: 580px;
   border-collapse: collapse;
   background: #fff;
   font-size: 14px;
@@ -955,6 +956,7 @@ ul {
   padding: 16px 20px;
   text-align: center;
   border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
 }
 
 .comparison__table th {
