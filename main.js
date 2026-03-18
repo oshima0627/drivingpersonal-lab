@@ -17,6 +17,7 @@ const nav = document.getElementById('nav');
 hamburger.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   hamburger.classList.toggle('open', isOpen);
+  header.classList.toggle('nav-open', isOpen);
   hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   document.body.style.overflow = isOpen ? 'hidden' : '';
 });
@@ -26,6 +27,7 @@ nav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
     hamburger.classList.remove('open');
+    header.classList.remove('nav-open');
     hamburger.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   });
